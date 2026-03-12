@@ -19,16 +19,16 @@ export async function POST(req) {
 
         const book = await prisma.book.create({
             data: {
-                id: body.id,
                 title: body.title,
                 author: body.author,
                 catagory: body.catagory,
-                quantity: body.quantity,
+                quantity: Number(body.quantity),
             },
         });
 
-        return NextResponse.json({ book, status: 200 });
+        return NextResponse.json(book, { status: 200 });
     } catch (error) {
+        console.error("POST Error: ", error);
         return NextResponse.json(
             { error: "Failed to post Book" },
             { status: 500 },
@@ -43,12 +43,13 @@ export async function DELETE(req) {
 
         const deletedBook = await prisma.book.delete({
             where: {
-                id: id,
+                id: Number(id),
             },
         });
 
-        return NextResponse.json({ deletedBook, status: 200 });
+        return NextResponse.json({ message: "Book deleted" });
     } catch (error) {
+        console.error("Delete Error: ", error);
         return NextResponse.json(
             { error: "Failed to delete Book record" },
             { status: 500 },
