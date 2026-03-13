@@ -41,7 +41,7 @@ export default function Sidebar() {
         <MenuItem icon={HelpCircle} label="Help Center" />
         
         {/* Soft Promo Card */}
-        <div className="mt-6 bg-gradient-to-br from-mint-50 to-emerald-50 p-6 rounded-[2rem] border border-emerald-100/50">
+        <div className="mt-6 bg-linear-to-br from-mint-50 to-emerald-50 p-6 rounded-4xl border border-emerald-100/50">
           <p className="text-xs font-black text-emerald-700 uppercase tracking-widest mb-1">New Feature</p>
           <p className="text-[13px] text-emerald-900/70 font-medium leading-relaxed">AI Book Recommendations are now live!</p>
         </div>
