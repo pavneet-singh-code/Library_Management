@@ -1,5 +1,7 @@
 import React from 'react';
+import dashboard from '@/app/dashboard/page';
 import { BookOpen, Users, Clock, ArrowRight, ShieldCheck, Zap } from 'lucide-react';
+import Link from 'next/link';
 
 const LandingPage = () => {
   return (
@@ -17,9 +19,11 @@ const LandingPage = () => {
           <a href="#stats" className="hover:text-blue-600 transition">Analytics</a>
           <a href="#contact" className="hover:text-blue-600 transition">Support</a>
         </div>
-        <button className="bg-slate-900 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-blue-600 transition shadow-lg shadow-blue-900/10">
-          Dashboard
-        </button>
+        <Link href="/dashboard">
+          <button className="bg-slate-900 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-blue-600 transition shadow-lg shadow-blue-900/10">
+            Dashboard
+          </button>
+        </Link>
       </nav>
 
       {/* --- Hero Section --- */}
