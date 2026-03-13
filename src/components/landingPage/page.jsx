@@ -30,7 +30,7 @@ const LandingPage = () => {
         </div>
         <h1 className="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight text-slate-900">
           Library Management <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-indigo-500">
             Reimagined for 2026.
           </span>
         </h1>
