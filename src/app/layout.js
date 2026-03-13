@@ -1,21 +1,24 @@
-import "./globals.css";
+"use client";
 
-export const metadata = {
-    title: "Library Manageent System",
-    description: "App to track every thing in a library",
-};
+import "./globals.css";
+import Sidebar from "@/components/sideBar";
+import { usePathname } from "next/navigation";
 
 export default function RootLayout({ children }) {
+    const pathname = usePathname();
+
+    const isLandingPage = pathname === "/";
+
     return (
         <html lang="en">
-            <body className="bg-black text-white">
-                {/* <Navbar /> */}
+            <body className="bg-slate-50 flex">
+                {!isLandingPage && <Sidebar />}
 
-                <main>{children}</main>
-
-                <footer className="text-center text-gray-500 py-10 border-t border-emerald-500/10">
-                    Library Manageent © 2026
-                </footer>
+                <main
+                    className={`flex-1 min-h-screen ${!isLandingPage ? "ml-64" : ""}`}
+                >
+                    {children}
+                </main>
             </body>
         </html>
     );
