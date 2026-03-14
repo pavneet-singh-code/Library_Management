@@ -32,7 +32,7 @@ export default function Navbar() {
           <Bell size={20} />
         </button>
         
-        <div className="h-10 w-[1px] bg-slate-200 mx-2"></div>
+        <div className="h-10 w-px bg-slate-200 mx-2"></div>
 
         <div className="flex items-center gap-3 pl-2 group cursor-pointer">
           <div className="text-right hidden sm:block">
@@ -40,7 +40,7 @@ export default function Navbar() {
             <p className="text-[11px] font-medium text-slate-400 mt-1">jane@campus.edu</p>
           </div>
           <div className="relative">
-            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-100 to-purple-100 p-1">
+            <div className="w-12 h-12 rounded-2xl bg-linear-to-br from-indigo-100 to-purple-100 p-1">
                <img 
                 src="https://api.dicebear.com/7.x/avataaars/svg?seed=Jane" 
                 alt="User" 
