@@ -1,26 +1,59 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* The "Campus Clowns" Palette */
+  --background: #F3E9DD;
+  /* Light Cream */
+  --foreground: #2D2926;
+  /* Off-Black / Deep Brown */
+
+  --accent: #D5A18E;
+  /* Muted Terracotta */
+  --accent-foreground: #ffffff;
+
+  --secondary: #E6D5C3;
+  /* Mid-tone Beige */
+  --primary-btn: #543D31;
+  /* Dark Coffee Button */
+
+  /* Fonts - keeping your Geist defaults but adding a Serif option for headings */
+  --font-serif: "Playfair Display", serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-btn: var(--primary-btn);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-serif);
 }
 
+/* Optional: Warm Dark Mode (instead of pure black) */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #2D2926;
+    /* Deep Charcoal/Brown */
+    --foreground: #F3E9DD;
+    /* Cream Text */
+    --secondary: #3D3834;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Helper for those elegant Serif headers in your image */
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif);
 }
