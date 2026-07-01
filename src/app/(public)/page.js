@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { Book, Clock, User, Search } from "lucide-react";
 
 const LibraryLandingPage = () => {
@@ -24,9 +25,12 @@ const LibraryLandingPage = () => {
 
                 {/* Updated: Both buttons are now solid for high visibility */}
                 <div className="flex items-center gap-3">
-                    <button className="bg-primary-btn text-background px-6 py-2.5 rounded-full font-semibold hover:opacity-90 transition-all text-sm shadow-md">
+                    <Link
+                        href="/login"
+                        className="bg-primary-btn text-background px-6 py-2.5 rounded-full font-semibold hover:opacity-90 transition-all text-sm shadow-md"
+                    >
                         User Login
-                    </button>
+                    </Link>
                     <button className="bg-accent text-white px-6 py-2.5 rounded-full font-semibold hover:brightness-110 transition-all text-sm shadow-md">
                         Admin Login
                     </button>
