@@ -130,14 +130,14 @@ const LibraryLandingPage = () => {
                 <h2 className="text-4xl font-serif mb-6">
                     Ready to digitize your collection?
                 </h2>
-                <p className="opacity-70 mb-10 max-w-lg mx-auto leading-relaxed">
+                <p className="opacity-90 mb-10 max-w-lg mx-auto leading-relaxed">
                     Join institutions already using our system to streamline
                     their daily operations.
                 </p>
                 <button className="bg-accent text-white px-10 py-4 rounded-full font-semibold text-lg hover:scale-105 transition-transform shadow-lg">
                     Deploy Your System Today
                 </button>
-                <div className="mt-20 border-t border-background/10 pt-10 text-sm opacity-50 flex flex-col md:flex-row justify-center items-center gap-8">
+                <div className="mt-20 border-t border-background/10 pt-10 text-sm opacity-90 flex flex-col md:flex-row justify-center items-center gap-8">
                     <span>
                         © {new Date().getFullYear()} Campus Library Management
                     </span>
