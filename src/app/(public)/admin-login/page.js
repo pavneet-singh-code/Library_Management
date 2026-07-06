@@ -8,7 +8,7 @@ const AdminLoginPage = () => {
         // Outer container: Unscrollable dark background
         <div className="h-screen w-screen bg-[#1a1817] overflow-hidden flex items-center justify-center p-6 lg:p-12">
             {/* The Main Container Card */}
-            <div className="w-full max-w-6xl h-full max-h-[750px] bg-[#2D2926] rounded-[3rem] overflow-hidden shadow-2xl flex flex-col md:flex-row relative border border-white/5">
+            <div className="w-full max-w-6xl h-full max-h-187.5 bg-[#2D2926] rounded-[3rem] overflow-hidden shadow-2xl flex flex-col md:flex-row relative border border-white/5">
                 {/* DECORATIVE: Bottom Left Circle (Anchored exactly to the edge) */}
                 <div className="absolute -bottom-1 -left-1 w-40 h-40 bg-white/5 rounded-tr-[5rem] z-0 pointer-events-none" />
 
@@ -94,8 +94,8 @@ const AdminLoginPage = () => {
                 <div className="hidden md:flex w-1/2 bg-accent relative flex-col items-center justify-center p-12 text-white overflow-hidden">
                     {/* Background Decor */}
                     <div className="absolute top-0 w-full flex justify-around opacity-20 pointer-events-none">
-                        <div className="w-64 h-32 bg-white rounded-b-full mt-[-20px]" />
-                        <div className="w-40 h-20 bg-white rounded-b-full mt-[-10px]" />
+                        <div className="w-64 h-32 bg-white rounded-b-full -mt-5" />
+                        <div className="w-40 h-20 bg-white rounded-b-full -mt-2.5" />
                     </div>
 
                     <div className="z-10 text-center flex flex-col items-center">
@@ -119,8 +119,8 @@ const AdminLoginPage = () => {
 
                     {/* Bottom Decor */}
                     <div className="absolute bottom-0 w-full flex justify-around opacity-10 pointer-events-none">
-                        <div className="w-80 h-40 bg-white rounded-t-full mb-[-30px]" />
-                        <div className="w-60 h-28 bg-white rounded-t-full mb-[-10px]" />
+                        <div className="w-80 h-40 bg-white rounded-t-full -mb-7.5" />
+                        <div className="w-60 h-28 bg-white rounded-t-full -mb-2.5" />
                     </div>
                 </div>
             </div>
