@@ -31,9 +31,12 @@ const LibraryLandingPage = () => {
                     >
                         User Login
                     </Link>
-                    <button className="bg-accent text-white px-6 py-2.5 rounded-full font-semibold hover:brightness-110 transition-all text-sm shadow-md">
+                    <Link
+                        href="/admin-login"
+                        className="bg-accent text-white px-6 py-2.5 rounded-full font-semibold hover:brightness-110 transition-all text-sm shadow-md"
+                    >
                         Admin Login
-                    </button>
+                    </Link>
                 </div>
             </nav>
 
